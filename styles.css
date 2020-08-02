@@ -1,0 +1,77 @@
+nav li {
+    list-style: none;
+    display: inline;
+    padding: 1% 0.5%;
+}
+nav ul {
+    text-align: center;
+}
+
+li {
+    font-family: "Nunito";
+}
+
+.quote {
+    font-family: "Lobster";
+    text-align: center;
+    font-size: 2rem;
+    background-color: orange;
+    padding: 3%;
+}
+
+
+#div-box {
+    width: 25%;
+    border: 0.125rem solid silver;
+    display: inline-block;
+    padding: 1rem;
+}
+
+.resume {
+    display: flex;
+}
+
+.contact {
+    text-align: center;
+}
+
+
+.award-info {
+    font-size: medium;
+    font-style: italic;
+    color: gray;
+}
+
+
+.skills-list {
+    display: flex;
+    text-align: left;
+    white-space: pre;
+}
+
+.skills-list li {
+    margin: 5px;
+}
+
+
+@media only screen and (max-width: 45rem) {
+    .quote {
+        font-size: 1rem;
+        background-color: blue;
+        color: white;
+    }
+
+    #div-box {
+        display: block;
+        width: 95%;
+        margin: 0.3125rem 0.125rem;
+    }
+    
+    .resume {
+        display: block;
+    }
+
+    .webname {
+        text-align: center;
+    }
+}
