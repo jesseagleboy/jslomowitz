@@ -103,9 +103,32 @@ li {
     }
 }
 
-@supports (-webkit-touch-callout: none) {
-    
-    @media only screen and (max-width: 45rem) {
+
+@media only screen and (max-width: 45rem) {
+
+    .quote {
+        font-size: 1rem;
+        background-color: blue;
+        color: white;
+    }
+
+    #div-box {
+        display: block;
+        width: 95%;
+        margin: 0.3125rem 0.125rem;
+    }
+
+    .resume, .other-info {
+        display: block;
+    }
+
+    .webname {
+        text-align: center;
+    }
+}
+
+
+@supports (-webkit-touch-callout: none) and only screen and (max-width: 45rem) {
     
     .quote {
         font-size: 1rem;
@@ -118,7 +141,7 @@ li {
         width: 95%;
         margin: 0.3125rem 0.125rem;
     }
-    
+
     .resume, .other-info {
         display: block;
     }
@@ -126,6 +149,5 @@ li {
     .webname {
         text-align: center;
     }
-}
     
 }
