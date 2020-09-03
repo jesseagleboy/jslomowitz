@@ -105,4 +105,24 @@ li {
 
 @supports (-webkit-touch-callout: none) {
     
+    .quote {
+        font-size: 1rem;
+        background-color: blue;
+        color: white;
+    }
+
+    #div-box {
+        display: block;
+        width: 95%;
+        margin: 0.3125rem 0.125rem;
+    }
+    
+    .resume, .other-info {
+        display: block;
+    }
+
+    .webname {
+        text-align: center;
+    }
+    
 }
