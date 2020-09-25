@@ -1,0 +1,30 @@
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+table {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#red {
+    background-color: red;
+}
+#blue {
+    background-color: blue;
+}
+
+#green {
+    background-color: green;
+}
+
+.text-box {
+    text-align: center;
+}
+
+#start-button {
+    display: block;
+    margin-left: 50%;
+}
