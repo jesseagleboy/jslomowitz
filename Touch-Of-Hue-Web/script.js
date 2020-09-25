@@ -9,11 +9,21 @@ let colors = ['Red', 'Blue', 'Green'];
 let status = 1;
 let timer;
 let chosenColor = '';
+let colorObject = [red, blue, green];
 
 function colorChoice() {
     let colorPicked = Math.floor(Math.random() * colors.length);
     chosenColor = colors[colorPicked];
-    colorLabel.innerHTML = colors[colorPicked];
+    colorLabel.innerHTML = chosenColor;
+    
+    red.style.border = '';
+    blue.style.border = '';
+    green.style.border = '';
+    
+    if (colorObject[colorPicked].id === chosenColor.toLowerCase()) {
+        colorObject[colorPicked].style.border = '5px solid';
+        colorObject[colorPicked].style.borderColor = `${chosenColor.toLowerCase()}`;
+    }
 }
 
 function addOne(event) {
@@ -35,7 +45,7 @@ function reset() {
     clearInterval(timer);
     startButton.innerHTML = 'Start Game';
     startButton.style.backgroundColor = '';
-    status += 1;
+    status = 1;
 
     scoreCount.innerHTML = '0';
     colorLabel.innerHTML = '';
@@ -44,6 +54,11 @@ function reset() {
     red.onclick = '';
     blue.onclick = '';
     green.onclick = '';
+
+
+    red.style.border = '';
+    blue.style.border = '';
+    green.style.border = '';
 }
 
 startButton.onclick = () =>  {
@@ -57,9 +72,6 @@ startButton.onclick = () =>  {
         red.onclick = addOne;
         blue.onclick = addOne;
         green.onclick = addOne;
-
-
-
 
     } else {
        reset();
